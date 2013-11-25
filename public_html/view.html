@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet" />
+        <link href="css/view_style.css" type="text/css" rel="stylesheet" />
+        <script src="js/jquery-1.9.1.js" ></script>
+        <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ISXLx3FofpdDF_0NUCRYxN_Je5Rv7p4&sensor=true">
+        </script>
+        <script src="js/funciones.js"></script>
+        <script src="js/jquery-ui-1.10.3.custom.js"></script>
+        <script src="js/funciones_view.js"></script>
+
+
+    </head>
+    <body>
+        <div id="loading">
+            <p id="text_loading">Cargando...</p>
+            <img alt="" src="images/animation.gif"/>
+        </div>
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Administración de Hoteles</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="new.html">Nuevo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="page">
+            <div class="container">
+                <img src="" alt="" id="icono"/>
+                <h1 id="titulo"></h1>
+                <div id="estrella"></div>
+                <div id="marco_imagen">
+                    <img src="" alt="" id="imagen"/>
+                </div>
+                <p id="info"></p>
+                <img src="" alt="" id="mapa"/>
+            </div>
+            <div class="navbar navbar-inverse navbar-fixed-bottom" id="footer">
+                <a class='btn btn-primary' id="editar" href="#">Editar</a>
+                <button class='btn btn-danger' id="eliminar" onclick="deleteHotel()" > Eliminar</button>
+            </div>
+        </div>
+    </body>
+</html>

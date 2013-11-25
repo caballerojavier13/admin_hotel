@@ -1,0 +1,70 @@
+@font-face {
+    font-family: "Harabara";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Harabara.ttf") format("truetype");
+}
+body {
+    padding: 70px;
+    width: 100%;    
+    background-image: url("../images/background.png");
+}
+#titulo{
+    text-align: center;
+    font-family: "Harabara";
+    font-size: 80px;
+    padding-bottom: 50px;
+    background: #deb027;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 3px 3px rgba(255,255,255,0.5),0px -1px 1px rgba(0,0,0,.3);
+}
+img{
+    position: relative;
+    width:100px; 
+    left: 50%; 
+    margin-left: -50px; 
+}
+#mapa{
+    position: relative;
+    margin: 10px auto;
+    border: solid 2px; 
+    height: 500px; 
+    width: 500px;
+}
+
+#loading{
+    display: none;
+}
+#loading p{
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 50px;   
+    animation: opacidad 5s infinite linear;
+    -webkit-animation: opacidad 3s 0s infinite linear;
+}
+
+@keyframes opacidad { 
+    0% {
+        opacity: 1;
+    } 
+    50%{
+        opacity: 0;
+    }
+    100% {  
+        opacity: 1;
+    } 
+} 
+@-webkit-keyframes opacidad { 
+    0% {
+        opacity: 1;
+    } 
+    50%{
+        opacity: 0;
+    }
+    100% {  
+        opacity: 1;
+    } 
+} 
